@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Baloo Bhai 2", cursive;
+    font-family: "Montserrat", sans-serif;
+}
+
 .container {
     height: 100vh;
     width: 100%;
@@ -18,6 +23,7 @@ header {
     font-weight: 600;
     color: #232836;
     text-align: center;
+    font-family: "Baloo Bhai 2", cursive;
 }
 
 form {
@@ -102,5 +108,12 @@ form .field {
     width: 100%;
     margin: 36px 0;
     background-color: #d4d4d4;
+}
+
+@media all and (max-width: 480px) {
+    .form {
+        width: 90%;
+        padding: 20px;
+    }
 }
 

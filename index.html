@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/01c93b7567.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Montserrat&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <section class="container forms">
-        <div class="form login">
-            <header>Login</header>
-            <form action="#" id="myForm">
-                <div class="field input-field">
-                    <input type="email" placeholder="Email" class="input">
-                </div>
+    <nav class="navbar">
+        <div class="container-icon">
+            <a href="index.html">
+                <img src="./images/airplane.png" class="logo" alt="">
+            </a>
 
-                <div class="field input-field">
-                    <input type="password" placeholder="Password" class="password">
-                    <i class="fa-regular fa-eye-slash eye-lid"></i>
-                </div>
-                
-                <div class="form-link">
-                    <a href="#" class="link forgot-pass">Forgot Password</a>
-                </div>
-
-                <div class="field button-field">
-                    <button value="submit">Login</button>
-                </div>
-
-                <div class="form-link">
-                    <span>Don't have an account?<a href="signup.html" class="link signup-link">Sign Up Here</a></span>
-                </div>
-                <div class="line"></div>
-            </form>
         </div>
-    </section>
+        <ul class="nav-list" id="navi-list">
+            <li class="list-items">
+                <a href="index.html">Home</a>
+            </li>
 
-    <script src="main.js"></script>
+            <li class="list-items">
+                <a href="#">Contact Us</a>
+            </li>
+
+            <li class="list-items">
+                <a href="signin.html">Sign in</a>
+            </li>
+
+            <li class="list-items">
+                <a href="signup.html">Get Started</a>
+            </li>
+        </ul>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Explore the World 😍</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor laudantium, natus adipisci doloremque
+                voluptates provident dolores animi, quam perspiciatis fugiat soluta temporibus, similique quia quisquam
+                facere optio nostrum maxime voluptatem qui quos mollitia. Veniam dicta eum blanditiis. Quod placeat
+                voluptas consectetur eius exercitationem reprehenderit saepe doloremque! Perspiciatis excepturi quia
+                voluptas!</p>
+
+                <button>Get started</button>
+            
+        </div>
+
+    </section>
 </body>
+<script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+</script>
+
+</html>
+</body>
+
 </html>

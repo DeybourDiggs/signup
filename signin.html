@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign in</title>
     <script src="https://kit.fontawesome.com/01c93b7567.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,51 +44,36 @@
             <div class="menu-line"></div>
         </div>
     </nav>
-    <section class="container forms" id="form">
-        <div class="form login">
-            <header>Sign Up</header>
-            <form action="">
-                <div class="field input-field" id="username">
-                    <label for="" class=>First name</label>
-                    <input type="text">
-                </div>
 
-                <div class="field input-field" id="username2">
-                    <label for="">Last name</label>
-                    <input type="text">
+    <section class="container forms">
+        <div class="form login">
+            <header>Login</header>
+            <form action="#" id="myForm">
+                <div class="field input-field">
+                    <input type="email" placeholder="Email" class="input">
                 </div>
 
                 <div class="field input-field">
-                    <label for="">Date of Birth</label>
-                    <input type="text">
-                </div>
-
-                <div class="field input-field" id="email">
-                    <label for="">Enter your email</label>
-                    <input type="text">
-                </div>
-
-                <div class="field input-field" id="password">
-                    <label for="">Enter your password</label>
-                    <input type="text">
+                    <input type="password" placeholder="Password" class="password">
                     <i class="fa-regular fa-eye-slash eye-lid"></i>
                 </div>
-
-                <div class="field input-field" id="password2">
-                    <label for="">Cofirm your password</label>
-                    <input type="text">
-                    <i class="fa-regular fa-eye-slash eye-lid"></i>
+                
+                <div class="form-link">
+                    <a href="#" class="link forgot-pass">Forgot Password</a>
                 </div>
 
                 <div class="field button-field">
-                    <button>Sign Up</button>
+                    <button value="submit">Login</button>
                 </div>
+
                 <div class="form-link">
-                    <span>Already have an account?<a href="signin.html" class="link signup-link">Sign in</a></span>
+                    <span>Don't have an account?<a href="signup.html" class="link signup-link">Sign Up Here</a></span>
                 </div>
+                <div class="line"></div>
             </form>
         </div>
     </section>
-    <script src="script.js"></script>
+
+    <script src="main.js"></script>
 </body>
 </html>

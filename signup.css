@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Baloo Bhai 2", cursive;
+    font-family: "Montserrat", sans-serif;
+}
+
 .container {
     height: 100vh;
     width: 100%;
@@ -18,6 +23,7 @@ header {
     font-weight: 600;
     color: #232836;
     text-align: center;
+    font-family: "Baloo Bhai 2", cursive;
 }
 
 form {
@@ -45,6 +51,7 @@ label {
     font-size: 16px;
     font-weight: 400;
     border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .eye-lid {
@@ -111,4 +118,11 @@ label {
     width: 100%;
     margin: 36px 0;
     background-color: #d4d4d4;
+}
+
+@media all and (max-width: 480px) {
+    .form {
+        width: 90%;
+        padding: 20px;
+    }
 }
